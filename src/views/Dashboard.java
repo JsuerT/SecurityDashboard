@@ -1,5 +1,8 @@
+package views;
+
 import javax.swing.*;
 import java.awt.*;
+import components.Button;
 
 public class Dashboard extends JFrame{
     public Dashboard(){
