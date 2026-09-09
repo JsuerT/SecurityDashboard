@@ -3,6 +3,8 @@ import java.awt.*;
 
 public class Dashboard extends JFrame{
     public Dashboard(){
+        //hier irgendwann noch ein layout manager 
+
         JPanel panel = new JPanel();
         setSize(1000, 700);
         setTitle("SecurityDashboard");
@@ -11,19 +13,13 @@ public class Dashboard extends JFrame{
                 JFrame.EXIT_ON_CLOSE);
 
 
-        //buttons
-        /*JButton button_portscan = new JButton("hello");
-          button_portscan.setPreferredSize(new Dimension (100, 100));
-          button_portscan.setIcon(new ImageIcon("Assets/Icons/blueDoor.png"));
-          */
-
-
         Button button_portscan = new Button("text", "Assets/Icons/blueDoor.png");
+        Button buttonzwei = new Button("hello", "Assets/Icons/blueDoor.png");
 
-
-        //panel config
+        panel.setLayout(new FlowLayout()); 
         panel.add(button_portscan);
-        panel.setBackground(new java.awt.Color(28, 28, 70));
+        panel.add(buttonzwei);
+        panel.setBackground(new java.awt.Color(24, 26, 27));
         add(panel);
 
         setVisible(true);
